@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".UI.Visual_search">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/visual_search"
+        android:scaleType="fitXY"
+        android:alpha="0.9"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search for an outfit by \ntaking a photo or uploading \n an image"
+        android:layout_above="@+id/take_picture"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+      android:layout_marginStart="17dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+     <androidx.appcompat.widget.AppCompatButton
+         android:layout_width="match_parent"
+         android:layout_height="52dp"
+         android:layout_centerVertical="true"
+         android:text="Take a Picture"
+         android:layout_marginHorizontal="17dp"
+         android:background="@drawable/take_picture_shape"
+         android:id="@+id/take_picture"
+         />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Take a Picture"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/upload_button_shape"
+        android:layout_marginHorizontal="17dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/take_picture"
+        android:id="@+id/upload_picture"
+        />
+
+</RelativeLayout>
